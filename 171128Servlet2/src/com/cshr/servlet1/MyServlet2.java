@@ -49,26 +49,31 @@ public class MyServlet2 extends GenericServlet {
 		//相对路径:/171128Servlet2/myServlet2
 		String uri = request.getRequestURI();
 		System.out.println("相对路径:"+uri);
+		out.println("相对路径:"+uri +"\t");
 		
 		//url(绝对路径)
 		//绝对路径:http://localhost:8080/171128Servlet2/myServlet2
 		StringBuffer url = request.getRequestURL();
 		System.out.println("绝对路径:"+url);
+		out.println("绝对路径:"+url+"\t");
 		
 		//获取当前项目中指定文件夹在服务器中的绝对路径
 		//直接写双引号表示项目的根路径
 		//E:\libs\apache-tomcat\apache-tomcat-6.0.32\webapps\171128Servlet2
 		String realPath = this.getServletContext().getRealPath("");
 		 System.out.println(realPath);
+		 out.println(realPath+"\t");
 		 
 		 //E:\libs\apache-tomcat\apache-tomcat-6.0.32\webapps\171128Servlet2
 		 String realPath1 = request.getRealPath("");
 		 System.out.println(realPath1);
+		 out.println(realPath1+"\t");
 		 
 		 //E:\libs\apache-tomcat\apache-tomcat-6.0.32\webapps\171128Servlet2\WEB-INF
 		 String realPath2 = request.getRealPath("/WEB-INF");
 		 //String realPath2 = request.getRealPath("/web-inf");
 		 System.out.println(realPath2);
+		 out.println(realPath2+"\t");
 		
 		
 	}

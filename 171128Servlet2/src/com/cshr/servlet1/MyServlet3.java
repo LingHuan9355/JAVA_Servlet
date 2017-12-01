@@ -29,6 +29,18 @@ public class MyServlet3 extends GenericServlet {
 		session.setAttribute("sname", "tom");
 		application.setAttribute("aname", "cat");
 		
+		//jsp¾Å´óÄÚÖÃ¶ÔÏó------------¶ÔÓ¦ServletÖÐµÄÀà
+		//request                HttpServletRequest
+		//response               HttpServletResponse
+		//session                HttpSession
+		//application            ServletContext
+        //out                    JspWriter
+		//page                   JspPage
+		//pageContext            PageContext
+		//config                 ServletConfig
+		//Exception              JspException
+		
+		
 		response.sendRedirect("result.jsp");
 	}
 
