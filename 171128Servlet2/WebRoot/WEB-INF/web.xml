@@ -13,6 +13,10 @@
 	  <servlet-name>myServlet2</servlet-name>
 	  <servlet-class>com.cshr.servlet1.MyServlet2</servlet-class>
 	</servlet>
+	<servlet> 
+	  <servlet-name>myServlet3</servlet-name>
+	  <servlet-class>com.cshr.servlet1.MyServlet3</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 	   <servlet-name>myServlet1</servlet-name>
@@ -21,6 +25,10 @@
 	<servlet-mapping>
 	  <servlet-name>myServlet2</servlet-name>
 	  <url-pattern>/myServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>myServlet3</servlet-name>
+	  <url-pattern>/myServlet3</url-pattern>
 	</servlet-mapping>
 	
 	

@@ -7,14 +7,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+
+    <title>My JSP 'result.jsp' starting page</title>
     
-    <title>index.jsp</title>
 
   </head>
   
   <body>
-        <a href="user.jsp">在Servlet中统一的解决get方式的乱码问题</a><br/>
-        <a href="test.jsp">在Servlet中获取request中的保存的属性值</a><br/>
-        <a href="myServlet3">在servlet中获取获取session和application对象(jsp9大内置对象与servlet关联)</a>
+   <div>session:${sname}</div> 
+   <div>application:${aname}</div>
+   
   </body>
 </html>
