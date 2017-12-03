@@ -25,5 +25,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        </select>
        <input type="submit" value="比较">
   </form>
+  <br/><br/>
+  <h1>---------连接数据库练习user------------</h1>
+   <a href="selectServlet4?uname=常青&&upwd=changq">显示用户</a>
+   <br/>
+   <h4>删除用户</h4>
+   <form action="deleteServlet5" method="post">
+                           用户编号：<input type="text" name="userId">
+          <input type="submit" value="提交">
+   </form>
+   <br/>
+   <h4>添加用户</h4>
+   <form action="insertServlet6" method="post">
+                           用户名：<input type="text" name="userName"><br/>
+                           用户密码：<input type="password" name="userPassWord"><br/>
+          <input type="submit" value="提交">
+   </form>
+   <br/>
+   <h4>修改用户</h4>
+   <form action="updateServlet7" method="post">
+                           用户编号：<input type="text" name="userId"><br/>
+                           用户姓名：<input type="text" name="userName"><br/>
+                           用户密码：<input type="password" name="userPassWord"><br/>
+          <input type="submit" value="提交">
+   </form>
   </body>
 </html>

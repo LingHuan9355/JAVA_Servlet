@@ -118,6 +118,22 @@
     <servlet-name>afterClassServlet3</servlet-name>
     <servlet-class>com.cshr.servlet2.AfterClassServlet3</servlet-class>
  </servlet>
+ <servlet>
+    <servlet-name>selectServlet4</servlet-name>
+    <servlet-class>com.cshr.user.servlet.SelectServlet</servlet-class>
+ </servlet>
+ <servlet>
+    <servlet-name>deleteServlet5</servlet-name>
+    <servlet-class>com.cshr.user.servlet.DeleteServlet</servlet-class>
+ </servlet>
+ <servlet>
+    <servlet-name>insertServlet6</servlet-name>
+    <servlet-class>com.cshr.user.servlet.InsertServlet</servlet-class>
+ </servlet>
+ <servlet>
+    <servlet-name>updateServlet7</servlet-name>
+    <servlet-class>com.cshr.user.servlet.UpdateServlet</servlet-class>
+ </servlet>
  
  <servlet-mapping>
     <servlet-name>afterClassServlet1</servlet-name>
@@ -130,6 +146,22 @@
  <servlet-mapping>
     <servlet-name>afterClassServlet3</servlet-name>
     <url-pattern>/afterClassServlet3</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>selectServlet4</servlet-name>
+    <url-pattern>/selectServlet4</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>deleteServlet5</servlet-name>
+    <url-pattern>/deleteServlet5</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>insertServlet6</servlet-name>
+    <url-pattern>/insertServlet6</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>updateServlet7</servlet-name>
+    <url-pattern>/updateServlet7</url-pattern>
  </servlet-mapping>
  
  <welcome-file-list><!--
