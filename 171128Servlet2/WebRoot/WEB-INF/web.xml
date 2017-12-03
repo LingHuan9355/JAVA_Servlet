@@ -55,6 +55,70 @@
 	 <url-pattern>/myServlet5</url-pattern>
 	</servlet-mapping>
 	
+	<!-- 练习一 -->
+	<servlet>
+	    <servlet-name>myServlet1_lx</servlet-name>
+	    <servlet-class>com.cshr.servlet2.MyServlet1</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>myServlet2_lx</servlet-name>
+	    <servlet-class>com.cshr.servlet2.MyServlet2</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>myServlet3_lx</servlet-name>
+	  <servlet-class>com.cshr.servlet2.MyServlet3</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>myServlet4_lx</servlet-name>
+	  <servlet-class>com.cshr.servlet2.MyServlet4</servlet-class>
+	  <init-param>
+	     <param-name>SEX</param-name>
+	     <param-value>boy</param-value>
+	  </init-param>
+	</servlet>
+	<servlet-mapping>
+	   <servlet-name>myServlet1_lx</servlet-name>
+       <url-pattern>/myServlet1_lx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>myServlet2_lx</servlet-name>
+       <url-pattern>/myServlet2_lx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>myServlet3_lx</servlet-name>
+	   <url-pattern>/myServlet3_lx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>myServlet4_lx</servlet-name>
+	   <url-pattern>/myServlet4_lx</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 练习二 -->
+	<servlet>
+	  <servlet-name>afterClassServlet1</servlet-name>
+	  <servlet-class>com.cshr.servlet3.AfterClassServlet1</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>afterClassServlet2</servlet-name>
+	  <servlet-class>com.cshr.servlet3.AfterClassServlet2</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>afterClassServlet3</servlet-name>
+	  <servlet-class>com.cshr.servlet3.AfterClassServlet3</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	  <servlet-name>afterClassServlet1</servlet-name>
+	  <url-pattern>/afterClassServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>afterClassServlet2</servlet-name>
+	  <url-pattern>/afterClassServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>afterClassServlet3</servlet-name>
+	  <url-pattern>/afterClassServlet3</url-pattern>
+	</servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

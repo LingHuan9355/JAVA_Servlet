@@ -3,6 +3,6 @@
     request.setAttribute("name","王通");
     request.setAttribute("age","25");
     
-    request.getRequestDispatcher("/myServlet2").forward(request,response);
+    request.getRequestDispatcher("myServlet2").forward(request,response);
 %>
 
