@@ -132,7 +132,7 @@ public class BookDao {
     	
     	try {
     		conn = DBHelper.getConn();
-    		String sql = "update books set name=?,price=?,writer=?  where id=?";
+    		String sql = "update books set book_name=?,book_price=?,book_write=? where book_id=?";
 			pst = conn.prepareStatement(sql);
             pst.setString(1, book.getBookName());
             pst.setDouble(2,book.getBookPrice());

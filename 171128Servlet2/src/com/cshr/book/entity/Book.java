@@ -22,6 +22,14 @@ public class Book {
 	public Book() {
 	}
 	
+	public Book(String bookName, double bookPrice, String bookWrite) {
+		super();
+		this.bookName = bookName;
+		this.bookPrice = bookPrice;
+		this.bookWrite = bookWrite;
+	}
+
+
 	public Book(int bookId, String bookName, double bookPrice, String bookWrite) {
 		this.bookId = bookId;
 		this.bookName = bookName;

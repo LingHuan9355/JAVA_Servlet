@@ -119,7 +119,54 @@
 	  <servlet-name>afterClassServlet3</servlet-name>
 	  <url-pattern>/afterClassServlet3</url-pattern>
 	</servlet-mapping>
+	
+	<!-- book数据操作 -->
+	<servlet>
+	    <servlet-name>addServlet</servlet-name>
+	    <servlet-class>com.cshr.book.action.AddServlet</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>showServlet</servlet-name>
+	    <servlet-class>com.cshr.book.action.ShowServlet</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>searchServlet</servlet-name>
+	    <servlet-class>com.cshr.book.action.SearchServlet</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>updateServlet</servlet-name>
+	    <servlet-class>com.cshr.book.action.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>deleteServlet</servlet-name>
+	    <servlet-class>com.cshr.book.action.DeleteServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	   <servlet-name>addServlet</servlet-name>
+	   <url-pattern>/addServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>showServlet</servlet-name>
+	   <url-pattern>/showServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>searchServlet</servlet-name>
+	   <url-pattern>/searchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>updateServlet</servlet-name>
+	   <url-pattern>/updateServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>deleteServlet</servlet-name>
+	   <url-pattern>/deleteServlet</url-pattern>
+	</servlet-mapping>
+	
+	
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <!--<welcome-file>index.jsp</welcome-file>-->
+    <welcome-file>index_book.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

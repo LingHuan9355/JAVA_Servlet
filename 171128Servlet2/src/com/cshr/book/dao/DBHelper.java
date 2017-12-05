@@ -56,7 +56,7 @@ public class DBHelper {
 	}
 	
 	//测试连接数据库
-	/*public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		System.out.println(getConn());
 	}*/
 	
