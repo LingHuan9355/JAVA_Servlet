@@ -24,7 +24,7 @@ commit;
 
 delete from books where book_id = 7;
 
-update books set name='俗人回档',price=60.5,writer='庚不让' where id=9;
+#update books set book_name='俗人回档',book_price=60.5,book_write='庚不让' where book_id=9;
 commit;
 
 

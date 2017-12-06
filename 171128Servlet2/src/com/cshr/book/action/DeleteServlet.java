@@ -37,8 +37,8 @@ public class DeleteServlet extends HttpServlet {
 		    int num = BookDao.delBook(bookId);   
 		   //跳jsp
 		    if(num > 0){
-		        //System.out.println("删除成功！");
-		    	resp.sendRedirect("index_book.jsp");
+		       // System.out.println("删除成功！");
+		    	resp.sendRedirect("showServlet");
 		    }
 		 
 	}

@@ -45,9 +45,8 @@ public class UpdateServlet extends HttpServlet {
 		   int num = BookDao.updateBook(new Book(bookId, bookName, bookPrice, bookWrite));
 		 //跳jsp
 		   if(num > 0){
-			   //System.out.println("修改成功！");
-			   resp.sendRedirect("index_book.jsp");
-			   //resp.sendRedirect("show_book.jsp");
+			  // System.out.println("修改成功！");
+			   resp.sendRedirect("showServlet");
 		   }
 		
 	}
