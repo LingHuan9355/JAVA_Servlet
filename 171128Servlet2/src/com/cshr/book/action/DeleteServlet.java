@@ -26,7 +26,7 @@ public class DeleteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		   //±àÂë
 		   req.setCharacterEncoding("utf-8");
-		   resp.setContentType("text/html;charset=utf-8");
+		   //resp.setContentType("text/html;charset=utf-8");
 		   //È¡Öµ
 		   int bookId = 0;
 		   String sbookId = req.getParameter("bookid");

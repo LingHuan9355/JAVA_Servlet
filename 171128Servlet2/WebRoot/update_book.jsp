@@ -14,8 +14,8 @@
   
   <body>
            <h3 align="center">书籍详情</h3>
-      <!--<form action="updateServlet?bid=${bid}" method="post"> -->
-    <form action="updateServlet" method="post">
+     <form action="updateServlet?bid=${bid}" method="post"> 
+    <!--  <form action="updateServlet" method="post">-->
            <table border="1" bordercolor="black" cellspacing="0" align="center" width="200" >
 	            <c:forEach items="${blist}" var="list">
 	            <tr>

@@ -31,9 +31,11 @@ public class UpdateServlet extends HttpServlet {
 		 //ȡֵ
 		   int bookId = 0;
 		   double bookPrice = 0;
-		   String sbookId = req.getParameter("bookId");
+		   //String sbookId = req.getParameter("bookId");
+		   String sbookId = req.getParameter("bid");
 		   if(sbookId !=null){
 			   bookId = Integer.parseInt(sbookId);
+			   System.out.println(bookId);
 		   }
 		   String bookName = req.getParameter("bookName");
 		   String sbookPrice  = req.getParameter("bookPrice");
