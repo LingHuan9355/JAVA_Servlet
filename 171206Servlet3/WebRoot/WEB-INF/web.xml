@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	 
+	 	 <!-- 配置保安 -->
+	  <!-- <filter>
+	     <filter-name>myFilter</filter-name>
+	     <filter-class>com.cshr.filter.MyFilter</filter-class>
+	 </filter> -->
+	  
+  	<!--  <filter-mapping>
+	    <filter-name>myFilter</filter-name> --> 
+	    <!-- 表示访问当前项目下所有资源都将进过滤器-->
+      	<!--  <url-pattern>/*</url-pattern>   -->
+    	
+      	<!-- 设置专门为servlet服务的过滤器 -->
+	    <!--<servlet-name>myServlet</servlet-name>-->
+	    
+	    <!-- 设置专用的过滤请求模式 -->
+	    <!-- <url-pattern>*.do</url-pattern> -->
+	    
+	    <!-- 设置某个目录下的资源要进行过滤 -->
+  	    <!--  <url-pattern>/admin/*</url-pattern> -->
+	    
+	    <!-- 过滤器默认过滤所有的客户端的请求类型 -->
+	    <!--  <dispatcher>REQUEST</dispatcher>
+  	     <dispatcher>FORWARD</dispatcher>
+  	     <dispatcher>INCLUDE</dispatcher>
+  	     <dispatcher>ERROR</dispatcher>  --> 
+    <!--  </filter-mapping>  --> 
+	 
+	 	 <!-- 字符编码过滤器 -->
+	 <filter>
+	    <filter-name>encodeFilter</filter-name>
+	    <filter-class>com.cshr.filter.EncodeFilter</filter-class>
+	 </filter>
+	 
+	 <filter-mapping>
+	    <filter-name>encodeFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	 </filter-mapping>
+	 
+	 <!-- 权限过滤 -->
+	 <filter>
+	    <filter-name>adminFilter</filter-name>
+	    <filter-class>com.cshr.filter.AdminFilter</filter-class>
+	 </filter>
+	 
+	 <filter-mapping>
+	    <filter-name>adminFilter</filter-name>
+	    <url-pattern>/admin/*</url-pattern>
+	 </filter-mapping>
+	 
+	 <!-- 敏感字符过滤 -->
+     <filter>
+        <filter-name>strFilter</filter-name>
+        <filter-class>com.cshr.filter.StrFilter</filter-class>
+     </filter>
+	 
+	 <filter-mapping>
+	    <filter-name>strFilter</filter-name>
+	    <servlet-name>strServlet</servlet-name>
+	 </filter-mapping>
+
+	 
+<!-- ================应用============================= -->
+  
+     <servlet>
+	   <servlet-name>myServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.MyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>myServlet</servlet-name>
+	   <url-pattern>/myServlet</url-pattern>
+	</servlet-mapping>
+
+     <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.cshr.servlet.LoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+        <servlet-name>strServlet</servlet-name>
+        <servlet-class>com.cshr.servlet.StrServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+        <servlet-name>strServlet</servlet-name>
+        <url-pattern>/strServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
