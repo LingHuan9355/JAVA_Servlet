@@ -14,8 +14,8 @@
     
       <%
          //请求转发
-         request.getRequestDispatcher("test2.jsp").forward(request,response);
-          //out.println(10/0);
+        // request.getRequestDispatcher("test2.jsp").forward(request,response);
+         out.println(10/0);
       %>
        
   </body>

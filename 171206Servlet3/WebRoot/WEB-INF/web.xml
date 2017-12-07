@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	 
-	 	 <!-- 配置保安 -->
+	<!-- 配置保安 -->
 	  <!-- <filter>
 	     <filter-name>myFilter</filter-name>
 	     <filter-class>com.cshr.filter.MyFilter</filter-class>
@@ -30,8 +30,20 @@
   	     <dispatcher>FORWARD</dispatcher>
   	     <dispatcher>INCLUDE</dispatcher>
   	     <dispatcher>ERROR</dispatcher>  --> 
-    <!--  </filter-mapping>  --> 
+    <!--  </filter-mapping>  -->
+    
+     
+	 <error-page>
+	    <exception-type>java.lang.Exception</exception-type>
+	    <location>/error.jsp</location>
+	 </error-page>
 	 
+	 <error-page>
+  		<error-code>404</error-code>
+  		<location>/error.jsp</location>
+	  </error-page>
+	 
+	 	 
 	 	 <!-- 字符编码过滤器 -->
 	 <filter>
 	    <filter-name>encodeFilter</filter-name>
@@ -43,7 +55,7 @@
 	    <url-pattern>/*</url-pattern>
 	 </filter-mapping>
 	 
-	 <!-- 权限过滤 -->
+	  <!--权限过滤--> 
 	 <filter>
 	    <filter-name>adminFilter</filter-name>
 	    <filter-class>com.cshr.filter.AdminFilter</filter-class>

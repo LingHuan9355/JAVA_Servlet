@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!-- ============Filter==================== -->
+	<filter>
+	   <filter-name>filter1</filter-name>
+	   <filter-class>com.cshr.filter.MyFilter1</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>filter1</filter-name>
+	   <servlet-name>myServlet1</servlet-name>
+	</filter-mapping>
+	<filter>
+	   <filter-name>encode</filter-name>
+	   <filter-class>com.cshr.filter.EncodeFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>encode</filter-name>
+	   <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+	   <filter-name>loginFilter</filter-name>
+	   <filter-class>com.cshr.filter.LoginFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>loginFilter</filter-name>
+	   <url-pattern>/save/*</url-pattern>
+	</filter-mapping>
+	<filter>
+	   <filter-name>showFilter</filter-name>
+	   <filter-class>com.cshr.filter.ShowFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>showFilter</filter-name>
+	   <servlet-name>showServlet</servlet-name>
+	</filter-mapping>
+	
+	<filter>
+	   <filter-name>personFilter</filter-name>
+	   <filter-class>com.cshr.filter.PersonFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>personFilter</filter-name>
+	   <servlet-name>humanServlet</servlet-name>
+	</filter-mapping>
+	
+	<!-- ==================Servlet===================== -->
+	
+	<servlet>
+	   <servlet-name>myServlet1</servlet-name>
+	   <servlet-class>com.cshr.servlet.MyServlet1</servlet-class>
+	</servlet>
+	<servlet>
+	   <servlet-name>encodeServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.EncodeServlet</servlet-class>
+	</servlet>
+	<servlet>
+	   <servlet-name>loginServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+	   <servlet-name>showServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.ShowServlet</servlet-class>
+	</servlet>
+	<servlet>
+	   <servlet-name>humanServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.HumanServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	   <servlet-name>myServlet1</servlet-name>
+	   <url-pattern>/myServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>encodeServlet</servlet-name>
+	   <url-pattern>/encodeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>loginServlet</servlet-name>
+	   <url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>showServlet</servlet-name>
+	   <url-pattern>/showServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>humanServlet</servlet-name>
+	   <url-pattern>/humanServlet</url-pattern>
+	</servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
