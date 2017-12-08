@@ -19,6 +19,7 @@
 	   <filter-class>com.cshr.filter.EncodeFilter</filter-class>
 	</filter>
 	
+	<!-- 过滤所有中文乱码问题-->
 	<filter-mapping>
 	   <filter-name>encode</filter-name>
 	   <url-pattern>/*</url-pattern>

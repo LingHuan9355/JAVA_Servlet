@@ -18,16 +18,23 @@ public class LoginFilter implements Filter {
 
 	}
 
+	@SuppressWarnings("null")
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
             HttpServletRequest req = (HttpServletRequest) request;
             HttpServletResponse res = (HttpServletResponse) response;
-            HttpSession session = req.getSession();
             
-            if(session.getAttribute("uname") !=null){
-            	chain.doFilter(req, res);
-            }else {
+            HttpSession session = req.getSession();
+             String roleName = (String) session.getAttribute("uname");
+             String rolePwd = (String) session.getAttribute("pwd");
+           //拿到项目的路径，相当于"/项目名"
+            System.out.println("-------------"+req.getContextPath());
+            
+            if(roleName ==null && rolePwd ==null 
+            		|| !roleName.equals("李四") && !rolePwd.equals("123")){
             	res.sendRedirect(req.getContextPath() + "/login3.jsp");
+            }else {
+            	chain.doFilter(req, res);
             }
 		
 		

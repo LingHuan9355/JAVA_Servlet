@@ -32,15 +32,17 @@ public class LoginServlet extends GenericServlet {
         HttpServletResponse response = (HttpServletResponse) res;
         HttpSession session = request.getSession();
         
-        request.setCharacterEncoding("utf-8");
-        
         String userName = request.getParameter("userName");
         String passWord = request.getParameter("passWord");
         
         System.out.println("userName=" + userName+ ",pwd=" + passWord);
         
+        session.setAttribute("uname", userName);
+        session.setAttribute("pwd", passWord);
+        
+        //response.sendRedirect("save/save.jsp");
+        
         if("ÀîËÄ".equals(userName) && "123".equals(passWord)){
-        	session.setAttribute("uname", userName);
         	response.sendRedirect("save/save.jsp");
         }else{
         	response.sendRedirect("login3.jsp");

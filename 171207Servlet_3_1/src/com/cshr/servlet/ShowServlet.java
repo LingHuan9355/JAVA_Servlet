@@ -29,9 +29,6 @@ public class ShowServlet extends GenericServlet {
            HttpServletRequest request = (HttpServletRequest) req;
            HttpServletResponse response = (HttpServletResponse) res;
            
-           request.setCharacterEncoding("utf-8");
-          // response.setContentType("text/html;charset=utf-8");
-           
            String userName = request.getParameter("userName");
            String sex = request.getParameter("sex");
            String [] hobbys = request.getParameterValues("hobby");
