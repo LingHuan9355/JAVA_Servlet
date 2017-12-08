@@ -30,7 +30,7 @@ import javax.servlet.ServletResponse;
  */
 public class MyServlet3_lx implements Servlet {
 
-	String filePath = "D:\\JAVA_WorkSpace2\\link.txt";
+	String filePath = "D:\\JAVA_WorkSpace2\\171126Servlet1\\WebRoot\\WEB-INF\\link.txt";
 	int num;
 	
 	@Override
