@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><students>
+	<student id="1001">
+		<name>张三</name>
+	</student>
+	<student id="1002">
+		<name>李四</name>
+	</student>
+	<student id="1003">
+		<name>王五</name>
+	</student>
+	<student id="1004">
+		<name>赵六</name>
+	</student>
+	<student id="1005">
+		<name>陈七</name>
+	</student>
+
+
+	<student id="1006">
+		<name>周八</name>
+	</student>
+	
+</students>
