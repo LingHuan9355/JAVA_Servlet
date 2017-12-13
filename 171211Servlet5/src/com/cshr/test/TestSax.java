@@ -23,11 +23,11 @@ public class TestSax {
 		  SAXParser sp = spf.newSAXParser();
 		  sp.parse("student.xml", saxDao);
 		  
-		  char [] arrys = {'a','b','c','d','e'};
-		  String str = new String(arrys, 0, arrys.length);
+		 // char [] arrys = {'a','b','c','d','e'};
+		 // String str = new String(arrys, 0, arrys.length);
 		 // System.out.println(str);
 		  
 		  List<Student> list = saxDao.getList();
-		 // System.out.println(list.size());
+		  System.out.println(list.size());
 	}
 }

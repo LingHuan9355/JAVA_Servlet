@@ -105,8 +105,6 @@ public class DOMDao {
 			 String id = stuNode.getAttribute("id");
 			 
 			 if(id.equals(sid)){
-				 //Element nameNode = (Element) stuNode.getElementsByTagName("name").item(0);
-				 //stuNode.removeChild(nameNode);
 				  ////删除student节点，追溯到该节点的父节点下的该节点
 				 stuNode.getParentNode().removeChild(stuNode);
 			 }

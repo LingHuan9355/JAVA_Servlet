@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+	<user id="1001" sex="男">
+		<name>Tom</name>
+		<birth>2017-12-13</birth>
+	</user>
+	<user id="1002" sex="女">
+		<name>Cat</name>
+		<birth>2017-12-14</birth>
+	</user>
+
+
+	<user id="1003" sex="男">
+		<name>jack</name>
+		<birth>1998-1-1</birth>
+	</user>
+</users>
