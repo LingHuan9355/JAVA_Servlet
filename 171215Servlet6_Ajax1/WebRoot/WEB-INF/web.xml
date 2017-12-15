@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 用户名验证 -->
+	<servlet>
+	   <servlet-name>userServlet</servlet-name>
+	   <servlet-class>com.cshr.servlet.UserServlet</servlet-class>
+	</servlet>
+	
+	<!-- 省市级联 -->
+	<servlet>
+	  <servlet-name>provinceServlet</servlet-name>
+	  <servlet-class>com.cshr.servlet.ProvinceServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>cityServlet</servlet-name>
+	  <servlet-class>com.cshr.servlet.CityServlet</servlet-class>
+	</servlet>
+	
+	<!-- 星座单选 -->
+	<servlet>
+	  <servlet-name>consteServlet</servlet-name>
+	  <servlet-class>com.cshr.servlet.ConsteServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>contentServlet</servlet-name>
+	  <servlet-class>com.cshr.servlet.ContentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>userServlet</servlet-name>
+	   <url-pattern>/userServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	  <servlet-name>provinceServlet</servlet-name>
+	  <url-pattern>/provinceServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	  <servlet-name>cityServlet</servlet-name>
+	  <url-pattern>/cityServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	  <servlet-name>consteServlet</servlet-name>
+	  <url-pattern>/consteServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	  <servlet-name>contentServlet</servlet-name>
+	  <url-pattern>/contentServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
