@@ -10,6 +10,6 @@
   <body>
          <a href="user.jsp">1.用户添加</a><br/>
          <a href="provinceServlet">2.省市级联动</a><br/>
-
+         <a href="consteServlet">3.星座单选</a><br/>
   </body>
 </html>
